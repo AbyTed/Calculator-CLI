@@ -6,7 +6,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Hi welcome to Abraham's Calculator CLI");
+        System.out.println("Hi welcome to Calculator CLI");
         Scanner scan = new Scanner(System.in);
         while(true){
 
@@ -14,7 +14,7 @@ public class Main {
             String input = scan.nextLine();
 
             if (Objects.equals(input, "X")){
-                System.out.println("Thank you for using Abraham's Calculator ClI");
+                System.out.println("Thank you for using Calculator ClI");
                 break;
             }
 
