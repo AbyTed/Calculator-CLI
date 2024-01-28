@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Main {
 
 
-    private static final Object STR = "";
 
     public static void main(String[] args) {
         System.out.println("Hi welcome to Abraham's Calculator CLI");
