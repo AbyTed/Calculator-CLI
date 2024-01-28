@@ -2,6 +2,10 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
+
+
+    private static final Object STR = "";
+
     public static void main(String[] args) {
         System.out.println("Hi welcome to Abraham's Calculator CLI");
         Scanner scan = new Scanner(System.in);
@@ -42,19 +46,17 @@ public class Main {
 
     static void CLI(){
         Scanner scan = new Scanner(System.in);
-        String operand = "";
-        while(true) {
+        String operand;
+        do {
+
             System.out.println("please input what operation you want to take place");
             operand = scan.nextLine();
-            if (Objects.equals(operand, "x") ||
-                    Objects.equals(operand, "/") ||
-                    Objects.equals(operand, "-") ||
-                    Objects.equals(operand, "+") ||
-                    Objects.equals(operand, "%") ||
-                    Objects.equals(operand, "^")){
-                break;
-            }
-        }
+        } while (!Objects.equals(operand, "x") &&
+                !Objects.equals(operand, "/") &&
+                !Objects.equals(operand, "-") &&
+                !Objects.equals(operand, "+") &&
+                !Objects.equals(operand, "%") &&
+                !Objects.equals(operand, "^"));
 
         System.out.println("Enter an a number pls: ");
 
@@ -80,7 +82,7 @@ public class Main {
             }
         }
         double content = calc(x, y, operand);
-        System.out.println(STR."\{x} \{operand} \{y} == \{ content}");
+        System.out.println(x + " " + operand + " " + y +  " == " + content);
 
     }
 
